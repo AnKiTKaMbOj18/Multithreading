@@ -13,6 +13,8 @@ public class Test3 extends Thread {
 		Test3 t2=new Test3();
 		t1.run();//if we directly call run method then our main will execute the object
 		t2.run();//t1,t2 are treated as normal objects not thread objects
+		//t1.start(); we should use start instead of run in main 
+		//t2.start();  because start is thread method to execute run method
 	}
 
 }
