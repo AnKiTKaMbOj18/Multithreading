@@ -1,4 +1,4 @@
-class Multi implements Runnable{
+class Multi extends Thread implements Runnable{
 
 	@Override
 	public void run() {
@@ -12,7 +12,7 @@ public class Test2 {
 	public static void main(String[] args) {
 		Multi m=new Multi();
 		Thread t=new Thread(m);
-		
+		m.start();
 		t.start();
 	}
 
